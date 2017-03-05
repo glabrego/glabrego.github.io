@@ -235,7 +235,7 @@ pt-BR:
   menu_label                 :
   toc_label                  : "Nesta página"
   ext_link_label             : "Link direto"
-  less_than                  : "meno que"
+  less_than                  : "menos de"
   minute_read                : "minutos de leitura"
   share_on_label             : "Compartilhe em"
   meta_label                 :
@@ -248,7 +248,7 @@ pt-BR:
   related_label              : "Você Talvez Goste Também"
   follow_label               : "Acompanhe em"
   feed_label                 : "Feed"
-  powered_by                 : "Feito com"
+  powered_by                 : "Desenvolvido com"
   website_label              : "Site"
   email_label                : "Email"
   recent_posts               : "Postagens recentes"

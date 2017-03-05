@@ -7,7 +7,7 @@
 
 # Site Settings
 theme:                    minimal-mistakes-jekyll
-locale                   : "pt"
+locale                   : "pt-BR"
 title                    : "Guilherme Labrego"
 title_separator          : "-"
 name                     : ""
@@ -67,7 +67,12 @@ og_image                 : # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links:
+    - "https://twitter.com/glabrego"
+    - "https://facebook.com/glabrego"
+    - "https://instagram.com/glabrego"
+    - "https://www.linkedin.com/in/glabrego"
+    - "https://plus.google.com/glabrego"
 
 # Analytics
 analytics:
@@ -78,10 +83,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "Guilherme Labrego"
+  avatar           : "/assets/images/avatar.jpg"
+  bio              : "Software Engineer @ Locaweb"
+  location         : "SP - BR"
   email            :
   uri              :
   bitbucket        :
@@ -90,10 +95,10 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "glabrego"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "glabrego"
   lastfm           :
   linkedin         :
   pinterest        :
@@ -101,7 +106,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "glabrego"
   vine             :
   weibo            :
   xing             :
@@ -212,16 +217,22 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+    - collection-archive
+    - year-archive
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+    collection-archive: archive-taxonomy
+    year-archive: archive-taxonomy
+  permalinks:
+    category: /categories/
+    tag: /tags/
+    tag: /collection-archive/
+    tag: /year-archive/
 
 
 # HTML Compression
@@ -242,6 +253,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
